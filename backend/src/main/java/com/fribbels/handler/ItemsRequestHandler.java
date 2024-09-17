@@ -168,7 +168,6 @@ public class ItemsRequestHandler extends RequestHandler implements HttpHandler {
                 matchingExistingItem.setSubstats(newItem.getSubstats());
                 matchingExistingItem.setOp(newItem.getOp());
                 matchingExistingItem.setStorage(newItem.getStorage());
-                matchingExistingItem.setSupplementary(newItem.getSupplementary());
                 matchingExistingItem.setAugmentedStats(newItem.getAugmentedStats());
                 matchingExistingItem.setReforgedStats(newItem.getReforgedStats());
                 matchingExistingItem.setEnhance(newItem.getEnhance());
@@ -225,7 +224,6 @@ public class ItemsRequestHandler extends RequestHandler implements HttpHandler {
                     matchingExistingItem.setOp(newItem.getOp());
                     matchingExistingItem.setStorage(newItem.getStorage());
                     matchingExistingItem.setMain(newItem.getMain());
-                    matchingExistingItem.setSupplementary(newItem.getSupplementary());
                     matchingExistingItem.setAugmentedStats(newItem.getAugmentedStats());
                     matchingExistingItem.setReforgedStats(newItem.getReforgedStats());
                     matchingExistingItem.setEnhance(newItem.getEnhance());
@@ -492,7 +490,6 @@ public class ItemsRequestHandler extends RequestHandler implements HttpHandler {
             dbItem.setLocked(item.isLocked());
             dbItem.setDisableMods(item.isDisableMods());
             dbItem.setAugmentedStats(item.getAugmentedStats());
-            dbItem.setSupplementary(item.getSupplementary());
             dbItem.setReforgedStats(item.getReforgedStats());
             dbItem.setEnhance(item.getEnhance());
             dbItem.setGear(item.getGear());
