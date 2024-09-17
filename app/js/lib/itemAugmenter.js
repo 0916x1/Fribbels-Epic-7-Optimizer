@@ -53,6 +53,11 @@ function augmentStats(item) {
         CriticalHitDamagePercent: 0,
         EffectivenessPercent: 0,
         EffectResistancePercent: 0,
+        DpsScore:0,
+        resSupportScore:0,
+        EffSupportScore:0,
+        CombatScore:0,
+        AREScore:0,
     };
     item.augmentedStats.mainType = item.main.type;
     item.augmentedStats.mainValue = item.main.value;
@@ -79,7 +84,8 @@ function augmentStats(item) {
             item.allowedMods.splice(item.allowedMods.indexOf(subStat.type), 1)
         }
     }
-
+    for (var scores of item.supplementary) {
+        item.augmentedStats[scores.type] = scores.value;
     if (item.gear == "Weapon") {
         item.allowedMods.splice(item.allowedMods.indexOf("Defense"), 1)
         item.allowedMods.splice(item.allowedMods.indexOf("DefensePercent"), 1)

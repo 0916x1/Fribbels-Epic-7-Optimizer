@@ -30,6 +30,11 @@ public class AugmentedStats {
     @SerializedName("Health") private int health;
     @SerializedName("HealthPercent") private int healthPercent;
     @SerializedName("Speed") private int speed;
+    @SerializedName("DpsScore") private int dpsScore;
+    @SerializedName("ResSupportScore") private int resSupportScore;
+    @SerializedName("CombatScore") private int combatScore;
+    @SerializedName("EffSupportScore") private int effSupportScore;
+    @SerializedName("AREScore") private int aREScore;
     private StatType mainType;
     private int mainValue;
 }
